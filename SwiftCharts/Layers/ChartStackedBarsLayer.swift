@@ -33,7 +33,7 @@ open class ChartStackedBarModel: ChartBarModel {
 }
 
 extension ChartStackedBarModel: CustomDebugStringConvertible {
-    open var debugDescription: String {
+    public var debugDescription: String {
         return [
             "items": items,
             "constant": constant,
