@@ -34,12 +34,12 @@ open class ChartStackedBarModel: ChartBarModel {
 
 extension ChartStackedBarModel: CustomDebugStringConvertible {
     public var debugDescription: String {
-        return [
+        return ([
             "items": items,
             "constant": constant,
             "axisValue1": axisValue1,
             "axisValue2": axisValue2
-            ]
+        ] as [String : Any])
             .debugDescription
     }
 }
